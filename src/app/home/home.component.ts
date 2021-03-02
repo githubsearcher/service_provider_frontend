@@ -12,8 +12,6 @@ export class HomeComponent implements OnInit {
   constructor(private readonly internetService: InternetService) { }
 
   ngOnInit() {
-//     git remote add origin https://github.com/githubsearcher/service_provider_frontend.git
-// git push -u origin main
     this.getListOfServices();
   }
 

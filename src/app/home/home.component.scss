@@ -1,8 +1,741 @@
-.green {
-    background-color: #3bda3b;
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0px !important;
+  margin: 0px !important;
+  background-color: #ffffff;
 }
 
-.blue {
-  color: rgb(40, 40, 150);
+/* header start */
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 15%;
 }
 
+.header__logo{
+  width: 20%;
+}
+
+.logo{
+  object-fit: contain;
+  object-position: center;
+  user-select: none;
+}
+
+.header__text{
+  width: 25%;
+}
+
+.header__text > span{
+  color: #8CC664;
+  font-size: 22px;
+}
+
+.header__text > span::before{
+  display: inline-block;
+  content: "";
+  border-top: .3rem solid #8CC664;
+  width: 2rem;
+  margin: 0 .5rem;
+  transform: translateY(-0.2rem);
+}
+
+.header__detail__box{
+  width: 25%;
+  border: 2px solid #688053;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #e4f0dc;
+}
+
+.header__box__text{
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.header__box__text > span{
+  font-weight: normal;
+}
+
+/* header ends */
+
+/* Main starts */
+.main__section{
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left Bar */
+.left__bar{
+  width: 60%;
+  height: 100%;
+  border-right: 2px solid black;
+  background-color: #f1f1f1;
+}
+
+.search__home__container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 8%;
+}
+
+.home__container{
+  color: gray;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.home__container > i{
+  font-size: 40px;
+  padding: 5px;
+}
+
+.search__container{
+  background-color: #d0cfd5;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search__bar{
+  background-color: white;
+  width: 98%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+}
+
+.search__bar > input{
+  background-color: white;
+  width: 90%;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.search__bar > i {
+  color: gray;
+  font-size: 25px;
+}
+
+.isp__container{
+  height: 80%;
+  margin-top: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.isp__box{
+  border: 2px solid #d5e6cc;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4ecdf;
+  margin: 15px 5px;
+}
+
+.isp__name, .isp__amount{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isp__name > p, .isp__amount > p {
+  margin: 0;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.isp__name > i, .isp__amount > i {
+  margin: 0;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.sorting__container{
+  height: 10%;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sort__action, .sort__action__btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #688053;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.sort__action > p, .sort__action > i{
+  font-size: 25px;
+  margin: 0px 5px;
+}
+
+.sort__action__btn{
+  font-size: 20px;
+  color: black;
+}
+
+.sort__action__btn > input[type=radio] {
+  border: 0px;
+  width: 100%;
+  height: 1em;
+  margin: 0px 10px;
+}
+
+.sort__action__btn > input[type="radio"] {
+  /* remove standard background appearance */
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+/* create custom radiobutton appearance */
+display: inline-block;
+width: 25px;
+height: 25px;
+padding: 6px;
+/* background-color only for content */
+background-clip: content-box;
+border: 2px solid #bbbbbb;
+background-color: #e7e6e7;
+border-radius: 50%;
+}
+
+.sort__action__btn > input[type="radio"]:checked {
+  background-color: black;
+}
+
+/* Left Bar ends */
+
+/* Right Bar starts */
+.right__bar{
+  width: 40%;
+  height: 100%;
+  background-color: #f1f1f1;
+  overflow-y: scroll;
+}
+
+/* Details Starts */
+.isp__details__container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.isp__details__container > i{
+  font-size: 10rem;
+  color: #9cda79;
+  padding: 10px;
+}
+
+.airtel__details{
+  border: 2px solid grey;
+  border-radius: 8px;
+  width: 50%;
+  height: 100%;
+  margin: 10px 30px;
+}
+
+.airtel__header{
+  background-color: gray;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.airtel__speed, .airtel__contact, .airtel__email, .airtel__price{
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.airtel__speed > p, .airtel__contact > p, .airtel__email > p, .airtel__price > p{
+  padding: 0 20px;
+  font-weight: 500;
+}
+
+/* Details ends */
+
+/* Rating Starts */
+
+.rating__container{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.rating__container > h2{
+  margin-right: 15px;
+}
+
+.rating__container > span{
+  font-size: 30px;
+}
+
+.rated {
+  color: orange;
+}
+/* Rating ends */
+
+/* Note Container starts */
+.note__container{
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #e9eef4;
+}
+
+.note{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* Note Container ends */
+
+.isp__action__container{
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link, .share, .download{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 2px solid #9cda79;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #74c85f;
+  cursor: pointer;
+}
+
+.link > p, .share > p, .download > p{
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+/* right bar ends */
+
+/* Mobile Portrait Screens */
+@media only screen and (max-width: 880px) and (orientation:portrait){
+  /* header start */
+  .header__text > span{
+      font-size: 12px;
+  }
+
+  .header__text > span::before{
+      border-top: .1rem solid #8CC664;
+      width: .5rem;
+      transform: translateY(-0.2rem);
+  }
+
+  .header__detail__box{
+      width: 40%;
+      margin-left: 10px;
+  }
+
+  .header__box__text{
+      font-size: 10px;
+  }
+  /* header ends */
+
+  .main__section{
+      flex-direction: column;
+      overflow-y: scroll;
+  }
+  /* Left Bar */
+  .left__bar{
+      width: 100%;
+      height: 60%;
+      border: 0;
+  }
+
+  .search__home__container{
+      height: 15%;
+  }
+
+  .home__container{
+      padding: 2px;
+  }
+
+  .home__container > i, .home__container > h2{
+      font-size: 20px;
+  }
+
+  .search__bar{
+      padding: 0px 5px;
+  }
+
+  .search__bar > i {
+      font-size: 15px;
+  }
+
+  .isp__container{
+      height: 70%;
+      margin-top: 4px;
+      padding: 2px 10px;
+  }
+
+  .isp__name > p, .isp__amount > p {
+      font-size: 15px;
+  }
+
+  .isp__name > i, .isp__amount > i {
+      font-size: 20px;
+  }
+
+  .sorting__container{
+      width: 100%;
+      height: 15%;
+  }
+
+  .sort__action, .sort__action__btn{
+      border: 1.5px solid #688053;
+      border-radius: 7px;
+      padding: 5px 7px;
+  }
+
+  .sort__action > p, .sort__action > i{
+      font-size: 17px;
+  }
+
+  .sort__action__btn{
+      font-size: 15px;
+  }
+
+  .sort__action__btn > input[type=radio] {
+      border: 0px;
+      width: 100%;
+      height: .1em;
+  }
+
+  .sort__action__btn > input[type="radio"] {
+      /* remove standard background appearance */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      /* create custom radiobutton appearance */
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      padding: 3px;
+      /* background-color only for content */
+      background-clip: content-box;
+      border: 2px solid #bbbbbb;
+      background-color: #e7e6e7;
+      border-radius: 50%;
+  }
+
+  .sort__action__btn > input[type="radio"]:checked {
+      background-color: black;
+  }
+
+  /* Left Bar ends */
+
+  /* Right Bar starts */
+  .right__bar{
+      border-top: 1px solid black;
+      width: 100%;
+      height: 40%;
+      overflow-y: scroll;
+  }
+
+  /* Details Starts */
+  .isp__details__container{
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .isp__details__container > i{
+      font-size: 5rem;
+      padding: 5px;
+  }
+
+  .airtel__details{
+      width: 90%;
+      margin: auto;
+  }
+
+  .airtel__header{
+      font-size: 20px;
+      padding: 10px;
+  }
+
+  .airtel__speed, .airtel__contact, .airtel__email, .airtel__price{
+      font-size: 20px;
+  }
+
+  .airtel__speed > p, .airtel__contact > p, .airtel__email > p, .airtel__price > p{
+      padding: 0 20px;
+  }
+
+  /* Details ends */
+
+  /* Note Container starts */
+  .note{
+      font-size: 1.3rem;
+      font-weight: 500;
+  }
+  /* Note Container ends */
+
+  .isp__action__container{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+
+  .link, .share, .download{
+      font-size: 1rem;
+      padding: 5px 10px;
+  }
+
+  .link > p, .share > p, .download > p{
+      margin-left: 10px;
+      margin-bottom: 0;
+      font-size: 1rem;
+  }
+  /* right bar ends */
+}
+
+/* Mobile Landscape Screens */
+
+@media only screen and (max-width: 880px) and (orientation:landscape){
+  /* header start */
+  .header-container{
+      height: 20%;
+  }
+
+  .header__logo{
+      width: 25%;
+  }
+
+  .header__text{
+      width: 35%;
+  }
+
+  .header__text > span{
+      font-size: 15px;
+  }
+
+  .header__text > span::before{
+      border-top: .2rem solid #8CC664;
+      width: 1.5rem;
+      margin: 0 .5rem;
+      transform: translateY(-0.2rem);
+  }
+
+  .header__detail__box{
+      width: 30%;
+  }
+
+  .header__box__text{
+      font-size: 15px;
+  }
+
+  /* header ends */
+
+  /* Main starts */
+  .main__section{
+      height: 85%;
+  }
+
+  /* Left Bar */
+  .search__home__container{
+      height: 10%;
+  }
+
+  .home__container{
+      padding: 5px;
+  }
+
+  .home__container > i, .home__container > h2{
+      font-size: 20px;
+      padding: 5px;
+  }
+
+  .search__bar > input{
+      padding: 2px;
+      font-size: 12px;
+  }
+
+  .search__bar > i {
+      font-size: 15px;
+  }
+
+  .isp__container{
+      height: 65%;
+      margin-top: 5px;
+      padding: 0px 10px;
+      overflow-y: scroll;
+  }
+
+  .isp__box{
+      height: 40px;
+      margin: 15px 5px;
+  }
+
+  .isp__name > p, .isp__amount > p {
+      font-size: 12px;
+      padding: 5px;
+  }
+
+  .isp__name > i, .isp__amount > i {
+      font-size: 20px;
+      padding: 5px;
+  }
+
+  .sorting__container{
+      height: 20%;
+  }
+
+  .sort__action, .sort__action__btn{
+      border-radius: 10px;
+      padding: 5px 5px;
+  }
+
+  .sort__action > p, .sort__action > i{
+      font-size: 15px;
+      margin: 0px 5px;
+  }
+
+  .sort__action__btn{
+      font-size: 12px;
+      color: black;
+  }
+
+  .sort__action__btn > input[type=radio] {
+      border: 0px;
+      width: 100%;
+      height: .5em;
+      margin: 0px 10px;
+  }
+
+  .sort__action__btn > label {
+      margin-bottom: 0;
+  }
+
+  .sort__action__btn > input[type="radio"] {
+      /* remove standard background appearance */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      /* create custom radiobutton appearance */
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      padding: 3px;
+      /* background-color only for content */
+      background-clip: content-box;
+      border: 2px solid #bbbbbb;
+      background-color: #e7e6e7;
+      border-radius: 50%;
+  }
+
+  /* Left Bar ends */
+
+  /* Right Bar starts */
+
+  .right__bar{
+      overflow-y: scroll;
+  }
+
+  /* Details Starts */
+
+  .isp__details__container > i{
+      font-size: 5rem;
+      padding: 5px;
+  }
+
+  .airtel__details{
+      margin: 10px 10px;
+  }
+
+  .airtel__header{
+      font-size: 15px;
+      padding: 5px;
+  }
+
+  .airtel__speed, .airtel__contact, .airtel__email, .airtel__price{
+      font-size: 15px;
+      padding: 5px;
+  }
+
+  .airtel__speed > p, .airtel__contact > p, .airtel__email > p, .airtel__price > p{
+      padding: 5px 10px;
+      margin-bottom: 0;
+  }
+
+  /* Details ends */
+
+  /* Rating Starts */
+
+  .rating__container{
+      padding: 10px;
+      margin-top: 5px;
+  }
+
+  .rating__container > h2{
+      margin-right: 10px;
+      font-size: 20px;
+  }
+
+  .rating__container > span{
+      font-size: 20px;
+  }
+
+  /* Rating ends */
+
+  /* Note Container starts */
+  .note__container{
+      padding: 5px;
+      margin: 8px;
+  }
+
+  .note{
+      font-size: 1rem;
+  }
+  /* Note Container ends */
+
+  .isp__action__container{
+      align-items: flex-start;
+  }
+
+  .link, .share, .download{
+      font-size: .8rem;
+      padding: 5px 10px;
+  }
+
+  .link > p, .share > p, .download > p{
+      margin-left: 10px;
+      font-size: .9rem;
+      margin-bottom: 0;
+  }
+
+  /* right bar ends */
+}
