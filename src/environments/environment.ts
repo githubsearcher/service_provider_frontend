@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_ENDPOINT: 'https://api.spaceXdata.com/v3/launches'
+  API_ENDPOINT: 'https://service-provider-backend.herokuapp.com'
 };
 
 /*
