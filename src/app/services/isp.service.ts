@@ -5,11 +5,11 @@ import { environment } from '../../environments/environment';
 @Injectable({
     providedIn: 'root'
 })
-export class InternetService {
+export class HttpService {
     constructor(private http: HttpClient) { }
 
-
-    getInternetData(paramsData) {
+    // get the list of internet service provider
+    getInternetServiceData() {
         return this.http.get(environment['API_ENDPOINT'] + '/service');
     }
 

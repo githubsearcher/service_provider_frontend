@@ -96,7 +96,7 @@ body {
   align-items: center;
 }
 
-.home__container > i{
+.home__container > em{
   font-size: 40px;
   padding: 5px;
 }
@@ -128,7 +128,7 @@ body {
   padding: 10px;
 }
 
-.search__bar > i {
+.search__bar > em {
   color: gray;
   font-size: 25px;
 }
@@ -162,7 +162,7 @@ body {
   padding: 5px;
 }
 
-.isp__name > i, .isp__amount > i {
+.isp__name > em, .isp__amount > em {
   margin: 0;
   font-size: 30px;
   padding: 5px;
@@ -186,7 +186,7 @@ body {
   padding: 10px 20px;
 }
 
-.sort__action > p, .sort__action > i{
+.sort__action > p, .sort__action > em{
   font-size: 25px;
   margin: 0px 5px;
 }
@@ -242,7 +242,7 @@ border-radius: 50%;
   justify-content: space-between;
 }
 
-.isp__details__container > i{
+.isp__details__container > em{
   font-size: 10rem;
   color: #9cda79;
   padding: 10px;
@@ -384,7 +384,7 @@ border-radius: 50%;
       padding: 2px;
   }
 
-  .home__container > i, .home__container > h2{
+  .home__container > em, .home__container > h2{
       font-size: 20px;
   }
 
@@ -392,7 +392,7 @@ border-radius: 50%;
       padding: 0px 5px;
   }
 
-  .search__bar > i {
+  .search__bar > em {
       font-size: 15px;
   }
 
@@ -406,7 +406,7 @@ border-radius: 50%;
       font-size: 15px;
   }
 
-  .isp__name > i, .isp__amount > i {
+  .isp__name > em, .isp__amount > em {
       font-size: 20px;
   }
 
@@ -421,7 +421,7 @@ border-radius: 50%;
       padding: 5px 7px;
   }
 
-  .sort__action > p, .sort__action > i{
+  .sort__action > p, .sort__action > em{
       font-size: 17px;
   }
 
@@ -472,7 +472,7 @@ border-radius: 50%;
       flex-direction: column;
   }
 
-  .isp__details__container > i{
+  .isp__details__container > em{
       font-size: 5rem;
       padding: 5px;
   }
@@ -574,7 +574,7 @@ border-radius: 50%;
       padding: 5px;
   }
 
-  .home__container > i, .home__container > h2{
+  .home__container > em, .home__container > h2{
       font-size: 20px;
       padding: 5px;
   }
@@ -584,7 +584,7 @@ border-radius: 50%;
       font-size: 12px;
   }
 
-  .search__bar > i {
+  .search__bar > em {
       font-size: 15px;
   }
 
@@ -605,7 +605,7 @@ border-radius: 50%;
       padding: 5px;
   }
 
-  .isp__name > i, .isp__amount > i {
+  .isp__name > em, .isp__amount > em {
       font-size: 20px;
       padding: 5px;
   }
@@ -619,7 +619,7 @@ border-radius: 50%;
       padding: 5px 5px;
   }
 
-  .sort__action > p, .sort__action > i{
+  .sort__action > p, .sort__action > em{
       font-size: 15px;
       margin: 0px 5px;
   }
@@ -667,7 +667,7 @@ border-radius: 50%;
 
   /* Details Starts */
 
-  .isp__details__container > i{
+  .isp__details__container > em{
       font-size: 5rem;
       padding: 5px;
   }
