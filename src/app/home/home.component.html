@@ -72,7 +72,7 @@
       <div class="right__bar">
           <!-- Details -->
           <div class="isp__details__container" id="provider-detail-image">
-              <img src="{{providerDetail?.imageurl}}" width="200" height="200" style="margin: 20px;" alt="ISP_Image">
+              <img src="{{providerDetail?.imageurl}}" class="img-fluid provider__img" alt="ISP_Image">
               <div class="airtel__details">
                   <div class="airtel__header">
                       {{providerDetail?.name}}
@@ -86,7 +86,7 @@
                       <p>{{providerDetail?.contact_number}}</p>
                   </div>
                   <div class="airtel__email">
-                      <em class="fa fa-envelope-o"></em> &nbsp;&nbsp;
+                      <em class="fa fa-envelope-o"></em>
                       <a href="mailto:{{providerDetail?.email}}">{{providerDetail?.email}}</a>
                   </div>
                   <div class="airtel__price">
