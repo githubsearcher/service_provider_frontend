@@ -109,6 +109,13 @@ body {
   justify-content: space-evenly;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .search__bar{
   background-color: white;
   width: 98%;
